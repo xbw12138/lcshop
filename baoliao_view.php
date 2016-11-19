@@ -94,7 +94,12 @@ $(document).ready(function(){
   <div class="bl_view_content w">
   	<h1>推荐理由<span></span></h1>
     <div class="bl_view_word">
-    <?php  $objbody=json_decode($row[1]); echo $objbody->body; ?>
+    <?php  
+    
+    //$objbody=json_decode($row[1]); 
+    //echo $objbody->body;
+    echo $row[1]; 
+    ?>
     	 
     </div>
   </div>
