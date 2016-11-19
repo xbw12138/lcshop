@@ -1,9 +1,16 @@
+<?php
+require_once 'yanzhenguser.php';
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>wangEditor qiniu test</title>
+    <meta name="applicable-device" content="mobile" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>商城商品管理</title>
     <link rel="stylesheet" type="text/css" href="../wangEditor/css/wangEditor.css">
+    <link href="../../css/public.css" rel="stylesheet" type="text/css" />
+    <link href="../../css/baoliao.css" rel="stylesheet" type="text/css">
     <style type="text/css">
         #editor-trigger {
             height: 300px;
@@ -17,20 +24,28 @@
     </style>
 </head>
 <body>
-    <p>商城商品管理</p>
-    <input id="title" name="Title" type="text"  placeholder="商品标题"/>
-    <input id="note" name="Note" type="text"  placeholder="商品简介"/>
-    <input id="price" name="Price" type="text"  placeholder="商品价格"/>
-    <input id="oprice" name="Oprice" type="text"  placeholder="商品原价"/>
-    <input id="source" name="Source" type="text"  placeholder="商品来源"/>
-    <input id="img" name="Img" type="text"  placeholder="商品图片链接"/>
+
+<header>
+  <div class="header">
+    <h2>商城商品管理</h2>
+  </div>
+</header>
+    <center>
+    <input id="title" name="Title" type="text"  placeholder="商品标题"/><br>
+    <input id="note" name="Note" type="text"  placeholder="商品简介"/><br>
+    <input id="price" name="Price" type="text"  placeholder="商品价格"/><br>
+    <input id="oprice" name="Oprice" type="text"  placeholder="商品原价"/><br>
+    <input id="source" name="Source" type="text"  placeholder="商品来源"/><br>
+    <input id="img" name="Img" type="text"  placeholder="商品图片链接"/><br>
+    <h5>商品类型:
     <select id='select'><option value='A'>电脑办公</option><option value='B'>生活用品</option><option value='C'>汽车用品</option><option value='D'>医药保健</option><option value='E'>图书</option><option value='F'>家用电器</option><option value='G'>服装</option><option value='H'>吃货</option></select>
-    <div id="editor-container" class="container">
-        <div id="editor-trigger">
+    </center>
+    <div id="editor-container" class="container" >
+        <div id="editor-trigger" style="height:400px;max-height:500px;">
             <p>在此编辑宝贝详细信息内容...</p>
         </div>
     </div>
-    <button id="btn1">发布商品</button>
+    <div class="go_buy"><a href="javascript:void(0);" id="btn1">发布商品</a></div>
     <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="../wangEditor/js/wangEditor.js"></script>
     <script type="text/javascript" src="../js/plupload/plupload.full.min.js"></script>

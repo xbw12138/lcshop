@@ -11,6 +11,7 @@
     <a href="index.php"><div class="ico_img"><img src="images/178hui-diannao.png"></div><span>电脑版</span></a>
   </div>
   <div class="copyright">Copyright © 2016 陵城购物 # 版权所有</div>
+  <div class="copyright"><a href="http://182.254.146.68/lcshop/admin/views/wangEditor.php">管理员</a></div>
 </div>
 <div class="gotop backtop" style="display:none;">
 </div>
