@@ -24,7 +24,7 @@ $(document).ready(function(){
 			closeBtn: false,
 			shadeClose: false,
 			offset: '25%',
-			content: "<div class='no_login_show'><h1>亲！您还没登录哦！</h1><a href='login.html'>马上登录</a><a href='register.html'>免费注册</a><a href='#'>陵城购物</a><a href='javascript:layer.closeAll();'>取消</a></div>"
+			content: "<div class='no_login_show'><h1>亲！您还没登录哦！</h1><a href='login.php'>马上登录</a><a href='register.php'>免费注册</a><a href='index.php'>陵城购物</a><a href='javascript:layer.closeAll();'>取消</a></div>"
 		});
 	});
 	$("#msg_gw").click(function(){
@@ -83,14 +83,14 @@ $(document).ready(function(){
   <div class="m_mall w">
   	<div class="mall_title"><span>购物分类</span><em><a href="index.php">更多</a></em></div>
     <div class="mall_list">
-   	  <a href="index.php" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>电脑办公</span></a>
-        <a href="index.php" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>生活用品</span></a>
-        <a href="index.php" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>汽车用品</span></a>
-        <a href="index.php" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>医药保健</span></a>
-        <a href="index.php" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>图书</span></a>
-        <a href="index.php" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>家用电器</span></a>
-        <a href="index.php" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>服装</span></a>
-        <a href="index.php" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>吃货</span></a>
+   	  <a href="search_more.php?type=A&page=1" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>电脑办公</span></a>
+        <a href="search_more.php?type=B&page=1" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>生活用品</span></a>
+        <a href="search_more.php?type=C&page=1" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>汽车用品</span></a>
+        <a href="search_more.php?type=D&page=1" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>医药保健</span></a>
+        <a href="search_more.php?type=E&page=1" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>图书</span></a>
+        <a href="search_more.php?type=F&page=1" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>家用电器</span></a>
+        <a href="search_more.php?type=G&page=1" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>服装</span></a>
+        <a href="search_more.php?type=H&page=1" class="mall"><div class="mall_logo"><img src="http://img.ecfun.cc/QQ20161118-0@2x.png" /></div><span>吃货</span></a>
     </div>
   </div>
   
@@ -132,19 +132,4 @@ $(document).ready(function(){
 
 </body>
 </html>
-<script type="text/javascript">
-//返回顶部
-$(document).ready(function(){
-	$(window).scroll(function () {
-		var scrollHeight = $(document).height();
-		var scrollTop = $(window).scrollTop();
-		var $windowHeight = $(window).innerHeight();
-		scrollTop > 75 ? $(".gotop").fadeIn(200).css("display","block") : $(".gotop").fadeOut(200).css({"background-image":"url(images/iconfont-fanhuidingbu.png)"});
-	});
-	$('.backtop').click(function (e) {
-		$(".gotop").css({"background-image":"url(images/iconfont-fanhuidingbu_up.png)"});
-		e.preventDefault();
-		$('html,body').animate({ scrollTop:0});
-	});
-});
-</script>
+
